@@ -1,2 +1,7 @@
-package org.example.algorithms;public class TwoDArray {
+package org.example.algorithms;
+
+/**
+ * https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true
+ */
+public class TwoDArray {
 }
