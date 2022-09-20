@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5953b2-e3e0-4c91-ace2-343c5bc95ba1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/BalancedBrackets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/algorithms/TwoDArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/algorithms/BalancedBracketsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/algorithms/TwoDArrayTest.java" afterDir="false" />
+    <list default="true" id="bf5953b2-e3e0-4c91-ace2-343c5bc95ba1" name="Changes" comment="Initial commit!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/io/TextToObjUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/libtests/EncryptionAndHashingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/io/TextToObjUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/example/util/io/textMatrix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/algorithms/TwoDArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/algorithms/TwoDArrayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,46 +51,18 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/org.example.util.io/example" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BalancedBracketsTest.notBalancedSymmetric">
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java14Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BalancedBracketsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java14Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.algorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="org.example.algorithms.BalancedBracketsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EncryptionAndHashingTest">
     <configuration name="BalancedBracketsTest.balancedSymmetric" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java14Tests" />
       <extension name="coverage">
@@ -146,13 +111,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EncryptionAndHashingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java14Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.libtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.libtests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.libtests.EncryptionAndHashingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextToObjUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java14Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.util.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.util.io" />
+      <option name="MAIN_CLASS_NAME" value="org.example.util.io.TextToObjUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EncryptionAndHashingTest" />
+        <item itemvalue="JUnit.TextToObjUtilTest" />
         <item itemvalue="JUnit.BalancedBracketsTest.notBalancedSymmetric" />
         <item itemvalue="JUnit.BalancedBracketsTest.notBalancedOddNumberOfBraces" />
         <item itemvalue="JUnit.BalancedBracketsTest.balancedSymmetric" />
-        <item itemvalue="JUnit.BalancedBracketsTest" />
-        <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -165,8 +160,24 @@
       <option name="presentableId" value="Default" />
       <updated>1656403321318</updated>
       <workItem from="1656403323496" duration="4839000" />
-      <workItem from="1656488855072" duration="4458000" />
+      <workItem from="1656488855072" duration="4633000" />
+      <workItem from="1656574625654" duration="5186000" />
+      <workItem from="1657114838289" duration="1808000" />
+      <workItem from="1657185871261" duration="663000" />
+      <workItem from="1658773819717" duration="252000" />
+      <workItem from="1662365710266" duration="627000" />
+      <workItem from="1663153588944" duration="841000" />
+      <workItem from="1663250438255" duration="3631000" />
+      <workItem from="1663316723706" duration="1308000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit!">
+      <created>1656495793843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656495793843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +193,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/util/io/TextToObjUtilTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
