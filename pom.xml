@@ -23,6 +23,28 @@
       <version>5.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20200518</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <version>2.2</version>
+    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.loadtest4j.drivers</groupId>-->
+<!--      <artifactId>loadtest4j-jmeter</artifactId>-->
+<!--      <version>0.5.0</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+    <dependency>
+      <groupId>org.loadtest4j.drivers</groupId>
+      <artifactId>loadtest4j-gatling</artifactId>
+      <version>0.10.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
