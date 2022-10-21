@@ -3,7 +3,7 @@ package org.example.loadtest;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
-import static org.example.loadtest.APIDetails.JAVASCRIPT_API_ID;
+import static org.example.loadtest.APIDetails.*;
 
 /**
  * https://www.loadtest4j.org/
@@ -26,22 +26,51 @@ public class CreateUserLoadTest {
 
     private static final int NUMBER_REQUESTS = 20;
 
-    private static ApiRequestTestHelper HELPER = new ApiRequestTestHelper();
+    private static final ApiRequestTestHelper HELPER = new ApiRequestTestHelper();
+
+
+    private static final String PATH = "user";
+
 
     @Test
     public void createUserJs(){
-        HELPER.test(JAVASCRIPT_API_ID, "javascript", "javascript", "user", USER_BODY, NUMBER_REQUESTS);
+        HELPER.test(JAVASCRIPT_API_ID, NODEJS, NODEJS, PATH, USER_BODY, NUMBER_REQUESTS);
     }
 
-    public void createUserPlaneJavaJvm(){}
-    public void createUserPlaneJavaGraalVm(){}
-    public void createUserQuarkusJvm(){}
-    public void createUserQuarkusGraalVm(){}
-    public void createUserSpringJvm(){}
-    public void createUserSpringGraalVm(){}
-    public void createUserMicronautJvm(){}
-    public void createUserMicronautGraalVm(){}
+    @Test
+    public void createUserPlaneJavaJvm(){
+        HELPER.test(PLANE_JAVA_API_ID, PLAIN_JAVA, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+    @Test
+    public void createUserPlaneJavaGraalVm(){
+        HELPER.test(PLANE_JAVA_API_ID, PLAIN_JAVA, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
 
+    @Test
+    public void createUserQuarkusJvm(){
+        HELPER.test(QUARQUS_API_ID, QUARKUS, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+
+    @Test
+    public void createUserQuarkusGraalVm(){
+        HELPER.test(QUARQUS_API_ID, QUARKUS, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+    @Test
+    public void createUserSpringJvm(){
+        HELPER.test(SPRING_API_ID, SPRING, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+//    public void createUserSpringGraalVm(){
+//        HELPER.test(PLANE_JAVA_API_ID, QUARKUS, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
+//    }
+    @Test
+    public void createUserMicronautJvm(){
+        HELPER.test(MICRONAUT_API_ID, MICRONAUT, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+
+    @Test
+    public void createUserMicronautGraalVm(){
+        HELPER.test(MICRONAUT_API_ID, MICRONAUT, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
 
     private static JSONObject createUserBody() {
         final JSONObject requestBody = new JSONObject();

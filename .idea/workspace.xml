@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5953b2-e3e0-4c91-ace2-343c5bc95ba1" name="Changes" comment="Added extra text.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/loadtest/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/loadtest/ResponseStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/loadtest/StaticRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/libtests/JSONObjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/APIDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/AWSTestUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/ApiRequestTestHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserDynamoDbTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserLoadTest.java" afterDir="false" />
+    <list default="true" id="bf5953b2-e3e0-4c91-ace2-343c5bc95ba1" name="Changes" comment="Added load test functions.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/ToUpperCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/libtests/EncryptionAndHashingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/libtests/EncryptionAndHashingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/util/io/TextToObjUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/util/io/TextToObjUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loadtest/APIDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/APIDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserDynamoDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserDynamoDbTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserLoadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserLoadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +62,22 @@
       <recent name="org.example.algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateUserLoadTest.createUserJs">
+  <component name="RunManager" selected="JUnit.CreateUserLoadTest">
+    <configuration name="CreateUserDynamoDbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java14Tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.loadtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.loadtest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.CreateUserDynamoDbTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateUserLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java14Tests" />
       <extension name="coverage">
@@ -86,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserLoadTest.createUserJs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToUpperCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java14Tests" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +102,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.loadtest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.CreateUserLoadTest" />
-      <option name="METHOD_NAME" value="createUserJs" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.ToUpperCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserLoadTest.createUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToUpperCaseTest.uppercaseQuarkusJvm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java14Tests" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +117,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.loadtest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.CreateUserLoadTest" />
-      <option name="METHOD_NAME" value="createUserTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.ToUpperCaseTest" />
+      <option name="METHOD_NAME" value="uppercaseQuarkusJvm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserLoadTest.createUserTestJs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ToUpperCaseTest.uppercaseSpringJvm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java14Tests" />
       <extension name="coverage">
         <pattern>
@@ -127,24 +133,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.loadtest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.CreateUserLoadTest" />
-      <option name="METHOD_NAME" value="createUserTestJs" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EncryptionAndHashingTest.pbkdf2Hashing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java14Tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.libtests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.libtests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.libtests.EncryptionAndHashingTest" />
-      <option name="METHOD_NAME" value="pbkdf2Hashing" />
+      <option name="MAIN_CLASS_NAME" value="org.example.loadtest.ToUpperCaseTest" />
+      <option name="METHOD_NAME" value="uppercaseSpringJvm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateUserLoadTest.createUserJs" />
         <item itemvalue="JUnit.CreateUserLoadTest" />
-        <item itemvalue="JUnit.CreateUserLoadTest.createUserTestJs" />
-        <item itemvalue="JUnit.CreateUserLoadTest.createUserTest" />
-        <item itemvalue="JUnit.EncryptionAndHashingTest.pbkdf2Hashing" />
+        <item itemvalue="JUnit.CreateUserDynamoDbTest" />
+        <item itemvalue="JUnit.ToUpperCaseTest" />
+        <item itemvalue="JUnit.ToUpperCaseTest.uppercaseSpringJvm" />
+        <item itemvalue="JUnit.ToUpperCaseTest.uppercaseQuarkusJvm" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +178,8 @@
       <workItem from="1664386778378" duration="166000" />
       <workItem from="1666168724342" duration="3436000" />
       <workItem from="1666255571372" duration="13367000" />
-      <workItem from="1666339271748" duration="5677000" />
+      <workItem from="1666339271748" duration="12084000" />
+      <workItem from="1666366381133" duration="561000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit!">
       <created>1656495793843</created>
@@ -204,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663667576693</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added load test functions.">
+      <created>1666353871775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666353871775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +222,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit!" />
     <MESSAGE value="Added extra text." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added extra text." />
+    <MESSAGE value="Added load test functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added load test functions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -233,6 +232,15 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/util/io/TextToObjUtilTest.java</url>
           <line>29</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/loadtest/ToUpperCaseTest.java</url>
+          <line>33</line>
+          <properties class="org.example.loadtest.ToUpperCaseTest" method="uppercaseQuarkusJvm">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

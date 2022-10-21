@@ -7,10 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static org.example.loadtest.APIDetails.JAVASCRIPT_API_ID;
+import static org.example.loadtest.APIDetails.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CreateUserDynamoDbTest  {
+
 
     private static final String FIRST_NAME = "firstName";
     private static final String SURNAME = "surname";
@@ -26,36 +27,52 @@ public class CreateUserDynamoDbTest  {
     private static final String PASSWORD_VALUE = "password123";
     private static final JSONObject USER_BODY =  createUserBody();
 
-    private static final int NUMBER_REQUESTS = 20;
+    private static final int NUMBER_REQUESTS = 100;
 
-    private final AWSTestUrl.Builder urlBuilder = new AWSTestUrl.Builder().setPath("user");
+    private static final ApiRequestTestHelper HELPER = new ApiRequestTestHelper();
+
+
+    private static final String PATH = "user-dynamodb";
+
 
     @Test
-    public void createUserDynamoDbTestJs() throws Exception {
-
-        // Given
-        final String url = urlBuilder.setApiId(JAVASCRIPT_API_ID).setFramework("javascript").setRuntime("javascript").build().url();
-        // When
-        final List<Response> responses = testRunner(url, USER_BODY, NUMBER_REQUESTS);
-        // Then
-        assertResults(responses);
+    public void createUserJs(){
+        HELPER.test(JAVASCRIPT_API_ID, NODEJS, NODEJS, PATH, USER_BODY, NUMBER_REQUESTS);
     }
 
-
-    private void assertResults(final List<Response> responses) {
-        final Map<String, Object> stats = ResponseStats.aggregateResponseCodes(responses);
-        System.out.println(stats);
-        assertTrue(((Map)stats.get("counts")).containsKey("200"), "No requests were successful.");
+    @Test
+    public void createUserPlaneJavaJvm(){
+        HELPER.test(PLANE_JAVA_API_ID, PLAIN_JAVA, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+    @Test
+    public void createUserPlaneJavaGraalVm(){
+        HELPER.test(PLANE_JAVA_API_ID, PLAIN_JAVA, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
     }
 
-    private List<Response> testRunner(final String url, final JSONObject body, final int nRequests) throws Exception {
-        final Map<String, String> headers = Map.of("Content-Type", "application/json");
-        final List<Response> responses = new ArrayList<>();
-        for(int i = 0; i < nRequests; i++) {
-            final Response response = StaticRequests.sendPOST(url, body.toString(), headers);
-            responses.add(response);
-        }
-        return responses;
+    @Test
+    public void createUserQuarkusJvm(){
+        HELPER.test(QUARQUS_API_ID, QUARKUS, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+
+    @Test
+    public void createUserQuarkusGraalVm(){
+        HELPER.test(QUARQUS_API_ID, QUARKUS, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+    @Test
+    public void createUserSpringJvm(){
+        HELPER.test(SPRING_API_ID, SPRING, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+//    public void createUserSpringGraalVm(){
+//        HELPER.test(PLANE_JAVA_API_ID, QUARKUS, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
+//    }
+    @Test
+    public void createUserMicronautJvm(){
+        HELPER.test(MICRONAUT_API_ID, MICRONAUT, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+
+    @Test
+    public void createUserMicronautGraalVm(){
+        HELPER.test(MICRONAUT_API_ID, MICRONAUT, GRAALVM, PATH, USER_BODY, NUMBER_REQUESTS);
     }
 
     private static JSONObject createUserBody() {
@@ -67,6 +84,5 @@ public class CreateUserDynamoDbTest  {
         requestBody.put(PASSWORD, PASSWORD_VALUE);
         return requestBody;
     }
-
 }
 
