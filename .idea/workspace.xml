@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5953b2-e3e0-4c91-ace2-343c5bc95ba1" name="Changes" comment="Added load test functions.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/ToUpperCaseTest.java" afterDir="false" />
+    <list default="true" id="bf5953b2-e3e0-4c91-ace2-343c5bc95ba1" name="Changes" comment="Added test cases for all deployed lambdas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loadtest/APIDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/APIDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserDynamoDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserDynamoDbTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserLoadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/loadtest/CreateUserLoadTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +175,7 @@
       <workItem from="1666168724342" duration="3436000" />
       <workItem from="1666255571372" duration="13367000" />
       <workItem from="1666339271748" duration="12084000" />
-      <workItem from="1666366381133" duration="561000" />
+      <workItem from="1666366381133" duration="1855000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit!">
       <created>1656495793843</created>
@@ -202,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666353871775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added test cases for all deployed lambdas.">
+      <created>1666367295133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666367295133</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +226,8 @@
     <MESSAGE value="Initial commit!" />
     <MESSAGE value="Added extra text." />
     <MESSAGE value="Added load test functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added load test functions." />
+    <MESSAGE value="Added test cases for all deployed lambdas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test cases for all deployed lambdas." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
