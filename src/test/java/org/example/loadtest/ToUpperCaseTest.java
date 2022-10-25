@@ -9,7 +9,7 @@ public class ToUpperCaseTest {
 
     private static final JSONObject JSON_PAYLOAD = createTestPayload();
 
-    private static final int NUMBER_REQUESTS = 100;
+    private static final int NUMBER_REQUESTS = 200;
 
     private static final ApiRequestTestHelper HELPER = new ApiRequestTestHelper();
 

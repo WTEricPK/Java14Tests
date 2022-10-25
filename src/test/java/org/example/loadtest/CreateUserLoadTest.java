@@ -24,7 +24,7 @@ public class CreateUserLoadTest {
     private static final String PASSWORD_VALUE = "password123";
     private static final JSONObject USER_BODY =  createUserBody();
 
-    private static final int NUMBER_REQUESTS = 100;
+    private static final int NUMBER_REQUESTS = 110;
 
     private static final ApiRequestTestHelper HELPER = new ApiRequestTestHelper();
 
