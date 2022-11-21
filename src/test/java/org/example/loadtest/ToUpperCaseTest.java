@@ -21,6 +21,12 @@ public class ToUpperCaseTest {
     }
 
     @Test
+    public void uppercasePython() {
+        HELPER.test(PYTHON_API_ID, PYTHON, PYTHON, PATH, JSON_PAYLOAD, NUMBER_REQUESTS);
+    }
+
+
+    @Test
     public void uppercasePlaneJavaJvm() {
         HELPER.test(PLANE_JAVA_API_ID, PLAIN_JAVA, JVM, PATH, JSON_PAYLOAD, NUMBER_REQUESTS);
     }

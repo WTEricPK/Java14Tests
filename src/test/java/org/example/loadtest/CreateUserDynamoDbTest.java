@@ -41,6 +41,11 @@ public class CreateUserDynamoDbTest  {
     }
 
     @Test
+    public void createUserPython() {
+        HELPER.test(PYTHON_API_ID, PYTHON, PYTHON, PATH, USER_BODY, NUMBER_REQUESTS);
+    }
+
+    @Test
     public void createUserPlaneJavaJvm(){
         HELPER.test(PLANE_JAVA_API_ID, PLAIN_JAVA, JVM, PATH, USER_BODY, NUMBER_REQUESTS);
     }

@@ -19,10 +19,16 @@ public class APIDetails {
 
     public static String NODEJS = "javascript";
 
+
+    public static String PYTHON = "python";
+
     /**
      * API IDs.
      */
     public static String JAVASCRIPT_API_ID = "pt4nve211d";
+
+
+    public static String PYTHON_API_ID = "6fmd4rxpsi";
 
     public static String QUARQUS_API_ID = "jq13n6d888";
 

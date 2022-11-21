@@ -39,7 +39,7 @@ public class AWSTestUrl {
         }
 
         public Builder setRuntime(final String runtime) {
-            assertTrue(List.of("java", "graalvm", "javascript").contains(runtime), "Invalid runtime value: " + runtime + ".");
+            assertTrue(List.of("java", "graalvm", "javascript", "python").contains(runtime), "Invalid runtime value: " + runtime + ".");
             this.runtime = runtime;
 
             return this;
